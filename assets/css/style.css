@@ -1,0 +1,385 @@
+body
+{
+	margin: 0;
+	padding: 0;
+	font-family: 'Michroma', sans-serif;
+}
+
+main
+{
+	margin: 0;
+	padding: 0;
+}	
+
+
+/****en-tête****/
+
+header
+{
+	display: flex;
+	background-image: linear-gradient(rgba(0,0,0,.8), rgba(50,50,50,.87)), url("bg.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+}
+
+/****logo****/
+
+header .logo 
+{
+	display: flex;	
+	flex-direction: column;	
+	width: 50px;
+	justify-content: flex-end;
+	
+}
+.logo img
+{
+	height: 30px;
+	margin: 5px;
+}
+
+.logo img:hover
+{
+	background-color: #fff;
+	border-radius: 4px;
+}
+
+ nav
+{
+	margin: 0;
+	padding: 0;
+	height: 10%;
+	width: 100%;
+}
+nav ul
+{
+	list-style-type: none;
+}
+
+nav li
+{
+	display: flex;
+	justify-content: space-around;
+	float: right;
+	list-style-type: none;
+	margin: 30px 30px 0 70px;
+	border:  1px solid #fff;
+	height: 50px;
+	width: 200px;
+}
+
+nav a 
+{
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+	color: #fff;
+	font-size: 1.2em;
+}
+
+
+
+/****corps****/
+
+.first
+{
+	display: flex;
+	height: 500px;
+	justify-content: space-around;
+}
+.first > div
+{
+	display: flex;
+	height: 50px;
+	margin: 0;
+	
+}
+.first>.first_1
+{
+	display: flex;
+	margin: 120px 50px 50px 30px;
+	background-color: yellow;
+	height: 300px;
+	width: 45%; 
+}
+.first >.first_2
+{
+	flex: 2px;
+	margin: 20px 45px 0 100px;
+	height: 450px;
+	width: 200px;
+}
+
+/********realisation********/
+
+.section-competence
+{
+	height: 400px;
+}
+
+.second 
+{
+	display: flex;
+	background-color: #d9d9d9;
+}
+
+
+
+ .second_1 img
+
+{
+	display: flex;
+	height: 470px;
+	width: 310px;
+	margin: 0 5px 100px 100px;
+}
+
+/*********skills**********/
+
+.second_2 h3
+{
+	margin: 7px;
+}
+
+.second > .second_2
+{
+	margin: 100px 20px 90px 150px;
+	width: 47%;
+	height: 350px;
+	box-sizing: border-box;
+	font-size: .8em;
+}
+
+.second_2 .right
+{
+	float: right;
+	position: relative;
+	top: -2vh;
+	
+}
+.progress-bar .progress-color
+{
+	height: 15px;
+}
+
+/*********************fond de couleur de la barre du bas*****************/
+.progress-bar 
+{
+	background-color: #cccccc;
+	width: 92%;
+	border-radius: 2px;
+	box-shadow: 2px 2px 2px #555; 
+	
+}
+
+/******************couleur de la barre de progression************************/
+ .progress-color
+ {
+ 	background-color: #336699;	
+ 	border-radius: 2px;
+ 	animation: fillbar 14s forwards;
+	transform: scaleX(0);
+	transform-origin: 0;
+ }
+
+/************pourcentage de skills***************/
+
+.level-skill-html { width: 25%;}
+.level-skill-css { width: 15%; }
+.level-skill-js { width: 0%; }
+.level-skill-php { width:10%; }
+.level-skill-git { width: 10%; }
+.level-skill-wordpress { width: 35%; }
+
+
+@keyframes fillbar{
+	to {
+		transform: scaleX(1.5);	
+	}
+}
+
+ /*******titre******/
+.sec-compet
+{
+	display: flex;
+	justify-content: center;
+	margin: 50px 500px 0;
+	font-size: 1.2em;
+}
+
+/********realisations********/
+section
+{
+	height: 600px;
+}
+
+.third
+{
+	display: flex;
+}
+
+
+.third> div
+{
+	width: 80%;
+	height: 500px;
+	margin: 70px auto;
+	align-items: center;
+	align-self: center;
+	justify-content: center;
+	display: flex;
+	flex-wrap: wrap;
+	box-sizing: border-box;
+}
+
+.sec-real
+{
+	display: flex;
+	border-radius: 25px;
+	color: #fff;
+	background-color: #000;
+	align-items: center; 
+	justify-content: center;
+	margin: auto;
+	border: 2px solid #fff;
+	font-size: 1.2em;
+	width: 250px;
+	height: 60px;
+}
+
+/*************boîte de la réalisation****************/
+.box
+{
+	display: inline-block;
+	height: 200px;
+	width: 250px;
+	margin: 10px;
+	border: 1px solid #000;
+	cursor: pointer;
+	
+}
+ .box:hover
+{
+	transform: scale(1.4);
+	transition: .6s;
+}
+
+.box img
+{
+	height: 200px;
+	width: 250px;
+}
+
+
+/*****hobbies*****/
+.section-hobbies
+{
+	height: 500px;
+}
+
+.fourth
+{	display: flex;
+	justify-content: center;
+	color: #fff;
+}
+
+.fourth > div
+{
+	display: flex;
+	align-self: center;
+	background-color: #070504;
+}
+.fourth_1
+{
+	margin: 100px 5px;
+	width: 250px;
+	height: 250px;
+}
+.img
+{
+	position: relative;
+}
+
+.img img
+{
+	position: absolute;
+	top: -200px;
+	left: 90px;
+	height: 70px;
+}
+.read
+{
+	position: relative;
+}
+.read img
+{
+	position: absolute;
+	top: -200px;
+	left: 350px;
+	height: 70px;
+}
+.camera
+{
+	position: relative;
+}
+.camera img
+{
+	position: absolute;
+	top: -200px;
+	left: 620px;
+	height: 70px;
+}
+.musique
+{
+	position: relative;
+}
+.musique img
+{
+	position: absolute;
+	top: -200px;
+	left: 870px;
+	height: 70px;
+}
+.sec-hob
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 200px  500px 50px;
+	border-radius: 25px;
+	border: 3px solid #000;
+	width: 250px;
+	height: 60px;
+	color: #000;
+	font-size: 1.2em;
+	background-color: #fff;
+}
+
+p
+{
+	text-align: justify;
+	margin: 20px 10px;
+	
+}
+
+/****pied de page****/
+
+footer
+{
+	display: flex;
+	position: relative;
+	height: 150px;
+	background-color: #060404 ;
+	color: #fff;
+}
+.box_1, .box_2
+{
+	margin: 15px;
+	padding: 20px;
+	height: 20px;
+}
+.box_1 img, .box_2 img
+{
+	height: 30px;
+}
