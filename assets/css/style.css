@@ -98,41 +98,39 @@ nav a
 .first>.first_1
 {
 	display: flex;
-	margin: 120px 50px 50px 30px;
-	background-color: yellow;
-	height: 300px;
-	width: 45%; 
+	margin: 120px 50px 50px 100px;
+	background-color: #1a1a1a;
+	color: #fff;
+	height: 260px;
+	width: 40%; 
 }
-.first >.first_2
+.first >.first_2 img
 {
 	flex: 2px;
 	margin: 20px 45px 0 100px;
 	height: 450px;
-	width: 200px;
+	width: 320px;
+	box-shadow: 0 5px 5px;
 }
 
 /********realisation********/
 
-.section-competence
-{
-	height: 400px;
-}
 
 .second 
 {
 	display: flex;
 	background-color: #d9d9d9;
+	height: 450px;
 }
-
-
 
  .second_1 img
 
 {
 	display: flex;
-	height: 470px;
-	width: 310px;
-	margin: 0 5px 100px 100px;
+	height: 450px;
+	width: 300px;
+	margin: 0 5px 0 100px;
+	box-shadow: 0 5px 5px;
 }
 
 /*********skills**********/
@@ -168,7 +166,7 @@ nav a
 {
 	background-color: #cccccc;
 	width: 92%;
-	border-radius: 2px;
+	border-radius: 1px;
 	box-shadow: 2px 2px 2px #555; 
 	
 }
@@ -176,8 +174,8 @@ nav a
 /******************couleur de la barre de progression************************/
  .progress-color
  {
- 	background-color: #336699;	
- 	border-radius: 2px;
+ 	background-color: #80bfff;	
+ 	border-radius: 1px;
  	animation: fillbar 14s forwards;
 	transform: scaleX(0);
 	transform-origin: 0;
@@ -211,7 +209,7 @@ nav a
 /********realisations********/
 section
 {
-	height: 600px;
+	height: 480px;
 }
 
 .third
