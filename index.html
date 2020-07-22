@@ -4,14 +4,14 @@
 	<title>Portfolio</title>
 	<meta charset="utf-8">
 	<meta name="author" content="descryption">
-	<meta name="viewport" content="width=width-device, initial-1.0">
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<meta name="viewport" content="width=width-device initial-scale=1.0">
 	<link href="https://fonts.googleapis.com/css?family=Michroma&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">	
 </head>
 <body>
 	<main>
 
-<!-------------- En-tête ----------------------->		
+<!--============================================-En-tête-========================================--->		
 		<header>
 			<div class="logo">
 				<a href="https://www.linkedin.com/in/yanick-ymouss-5a04761a2/" target="_blank"><img src="assets/images/linkedin.png"></a>
@@ -21,26 +21,44 @@
 			</div>
 			<nav>
 				<lu>
-					<li><a href="#">Blog</a></li>
-					<li><a href="#">Mon Parcours</a></li>
-					<li><a href="index.html">Accueil</a></li>
+					<li><a href="#competence">Mes Compétences</a></li>
+					<li><a href="#timeline">Mon Parcours</a></li>
+					<li><a href="#real">Mes réalisations</a></li>
 				</lu>
 			</nav> 
+<!---------------------------------Pour le responsive---------------------------------->
+
+			<div class="menu">
+				<input type="checkbox" id="check">
+				<label for="check"><span class="burger-menu">☰</span></label>
+				<div class="bars-menu">
+					<ul>
+						<li><a href="#competence">Mes compétences</a></li>
+						<li><a href="#timeline">Mon parcours</a></li>
+						<li><a href="#real">Mes réalisations</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="header">
+				<p>   Yanick <br>Devéloppeur<br>Web et Web Mobile</p>			
+			</div>
 
 		</header>
 
-<!------------------------début du corps du portfolio--------------------------------->
+<!--==================================-début du corps du portfolio-=====================================-->
 
-		<section class="first">
-			
+		
+		<section class="first"  id="propos">
 			<div class="first_1">
+				<h3>A Propos</h3>
 				<p> 
 					Je suis friand du numérique et surtout rêveur 
 					car je crois que les rêves sont porteurs 
 					d'espoir. Le numérique offre des capacités
 					à trouver des solutions aux difficultés
 					quotidiennes. J'aime trouver des solutions à des
-					et des nouveaux challenges
+					problémes et rélever des nouveaux challenges.
 					Je vous invite à parcourir mon portfolio qui
 					vous offrira davantage d'informations sur ma personne.	
 				</p>
@@ -48,15 +66,15 @@
 			<div class="first_2"><img src="assets/images/ya.jpg"></div>
 		</section>	
 
-<!-----------------------------------compétences------------------------------------>
+<!--=====================================-compétences-=======================================-->
 
-		<section class="second-competence">
-			
+		
+		<section class="second-competence" id="competence">
+			<h3 class="	skills">Mes Compétences</h3>
 			<div class="second">
-
 				<div class="second_1"><img src="assets/images/ya.jpg"> </div>
 
-<!------------------------------------skills--------------------------------------->
+<!--===================================-skills-===============================================-->
 
 			<div class="second_2">
 				
@@ -78,7 +96,7 @@
 				</div>
 
 				<h3>php</h3>
-				<h3 class="right">10%</h3>
+				<h3 class="right">0%</h3>
 				<div class="progress-bar">
 					<div class="progress-color level-skill-php"></div>
 				</div>
@@ -98,14 +116,90 @@
 			</div>
 		</section>
 
-<!-----------------------------------realisations---------------------------------->	
+<!--=========================================-mon parcours-==========================================-->
 
+
+		<h3 class="title-parc">Mon Parcours</h3>
+		<section class="parcours" id="timeline">
+			
+			<div class="head-timeline">
+				<time  class="time-right" datetime="2012/10/13">2012-2013</time>
+				<div class="marks"></div>
+				<div class="text">
+					<h3 class="title">UOB</h3>
+					<p>
+						L'Université Omar Bongo est dans cette période l'établissement dans lequel j'ai fait mon entrée et où je suis ressortis avec une licence en géographie eHumaine en 2017.
+						Une grande période où ja' acquis des connaissances, des méthodes qui sont aujourd'hui utiles.
+					</p>
+				</div>
+			</div>
+
+			<div class="head-timeline-left">
+				<time class="time-left" datetime="2013/06/08">Juil 2013</time>
+				<div class="marks-left"></div>
+				<div class="text-left">
+					<h3 class="title-left">ABC Ndolo</h3>
+					<p>
+						ABC Ndolo est un Cabinet d'architecture. Pour les besoins d'une étude, le dit cabinet avait besoin des agents de terrains pour récolter les informations le flux de circulation des véhicules dans dans la Capitale. J'ai participé pendant pendant un mois dans ce projet.
+					</p>
+				</div>
+			</div>
+
+			<div class="head-timeline">
+				<time  class="time-right" datetime="2014/06/14">Juin 2014</time>
+				<div class="marks"></div>
+				<div class="text">
+					<h3 class="title">Sermax</h3>
+					<p>
+						Entrprise dans l'événmentiel mais aussi la production graphique, Sermax est l'endroit où j'ai réellement appris le travail en équipe. En effet, j'ai parti de la section design et graphique pendant un mois. 
+					</p>
+				</div>
+			</div>
+
+			<div class="head-timeline-left">
+				<time class="time-left" datetime="2018/07/08">juil 2018</time>
+				<div class="marks-left"></div>
+				<div class="text-left">
+					<h3 class="title-left">CIBLE Gabon</h3>
+					<p>
+						CIBLE Gabon est une société d'étude. J'ai passé un mois de stage où j'ai essentiellement participé à des enquête sur le terrain pour la collecte de données mais également de les trier et de rentrer en machine grâce à certains logiciels.
+					</p>
+				</div>
+			</div>
+
+			<div class="head-timeline">
+				<time  class="time-right" datetime="2019/05/07">mai 2019</time>
+				<div class="marks"></div>
+				<div class="text">
+					<h3 class="title">Logimar</h3>
+					<p>
+						Société de transport maritime, j'ai fais parti de la société sous-traitante K-consultig. Cette société sous-traitante de Logimar s'occupe essentiement de la logistique. j'ai passé cinq mois dans cette structure où nous avions pour rôle de npus occper des bagages. 
+					</p>
+				</div>
+			</div>
+
+			<div class="head-timeline-left">
+				<time class="time-left" datetime="2020/01/07">Jan 2020</time>
+				<div class="marks-left"></div>
+				<div class="text-left">
+					<h3 class="title-left">Ecole241</h3>
+					<p>
+						L'Ecole241 est la fabrique par laquelle je suis passé pour prétendre aujourd'hui ventre mes sevices. Dans cette école j'ai appris l'essentiel de mes compétences en tant que dévloppeur web. Mais dans la structuration du travail en équipe. Elle est à la fois un lieu d'apprentissage, d'aide et de valorisation des la société africaine et gabonause en particulier.
+					</p>
+				</div>
+			</div>
+
+		</section>
+
+
+<!--====================================-realisations-======================================-->	
 		
-		<section>
-			<h3 class="sec-real">Mes réalisations</h3> 
+
+		<h3 class="sec-real">Mes réalisations</h3> 
+		<section class="third_realisation" id="real">
 			<div class="third">
 				<div class="realisaton">
-					<div class="box"><a href=""><img src="assets/images/best.PNG"></a> </div>
+					<div class="box"><a href=""><img src="assets/images/best.PNG"></a></div>
 					<div class="box"><a href="https://yanick89.github.io/M-dia/" target="_blank"><img src="assets/images/mediaPNG.PNG"></a> </div>
 					<div class="box"><a href=""><img src="assets/images/meteo.PNG"></a></div>
 					<div class="box"><a href="https://yanick89.github.io/form_emploi_du_temps/index.html" target="_blank"><img src="assets/images/emploi_du_temps.PNG"></a></div>
@@ -116,35 +210,39 @@
 		</section>
 
 
-<!-----------hobbies------------>
+<!--========================================-hobbies-=============================================-->
+		
 
-
+		<h3 class="sec-hob" id="hobbies">Mes hobbies</h3>
 		<section class="section-hobbies">
-			<h3 class="sec-hob">Mes hobbies</h3>
 			<div class="fourth">
-				<div class="img"><img src="assets/images/sport.png"></div>
-				<div class="read"><img src="assets/images/lecture.png"></div>
-				<div class="camera"><img src="assets/images/camera.png"></div>
-				<div class="musique"><img src="assets/images/musique.png"></div>
-				<div class="fourth_1">
+				
 
+<!--=========================================-texte hobbies-======================================-->
+
+				<div class="fourth_1">
+					<div class="img"><img src="assets/images/sport.png"></div>
 					<p>Le sport est pour moi un moyen d'éducation,
-					   synonime de surpassement et
+					   synonyme de surpassement et
 					   de cohésion dans une société.
 					   Pratiquer un sport est un défi
 					   quotidient pour soi et un gage
 					   de bonne santé.		
 					</p> 
 				</div>
+
 				<div class="fourth_1">
+					<div class="read"><img src="assets/images/lecture.png"></div>
 					<p>
 						J'ai découvert en la lecture
 						un moyen d'évasion de création 
-						et de dévolution. Lire est 
+						et d'évolution. Lire est 
 						encore la possibilité d'apprendre.
 					</p>
 				</div>
+
 				<div class="fourth_1">
+					<div class="camera"><img src="assets/images/camera.png"></div>
 					<p>
 						J'aime la photographie.
 						Les moments captés sur une images est révélateurs de l'émotion d'un instant.
@@ -152,9 +250,11 @@
 						ce que j'aime.
 					</p>
 				</div>
+
 				<div class="fourth_1">
+					<div class="musique"><img src="assets/images/musique.png"></div>
 					<p>
-						La musique reste pour moi le moeyn
+						La musique reste pour moi le moyen
 						de lâcher prise et de ressources
 						à la fois. D'ailleurs pendant les 
 						moments de coding, c'est elle qui 
@@ -164,17 +264,21 @@
 			</div>	
 		</section>
 
-<!-------------pied de page---------------->
+<!--==========================================--pied de page-=======================================-->
 		<footer>
-			
-			<div class="box_1">
-				<div class="box_foot"><img src="assets/images/call.png"> +241 62413491</div>
-				<div class="box_foot"><img src="assets/images/gmail.png"> moussoundayannick89@gmail.com</div>
+		
+			<div class="box_footer">
+				<div class="box_1">
+					<div class="box_foot"><img src="assets/images/call.png"> <span>+241 62413491</span> </div>
+					<div class="box_foot"><img src="assets/images/gmail.png"> <span>moussoundayannick89@gmail.com</span></div>
+				</div>
+				<div class="box_2">
+					<div class="box_foot1"><img src="assets/images/site.png"><span> site</span></div>
+					<div class="box_foot1"><img src="assets/images/charbonnages.png"> <span> Charbonnage, Libreville, Gabon</span></div>
+				</div>
 			</div>
-			<div class="box_2">
-				<div class="box_foot1"><img src="assets/images/site.png">site</div>
-				<div class="box_foot1"><img src="assets/images/charbonnages.png"> Charbonnage, Libreville, Gabon</div>
-			</div>
+			<p>&copy Copyright 2020</p>
+
 		</footer>
 	</main>
 </body>
